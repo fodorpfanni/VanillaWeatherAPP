@@ -18,7 +18,7 @@ function formatDate(timestamp) {
     "Saturday",
   ];
   let day = days[date.getDay()];
-  return `${day}, ${hours}: ${minutes}`;
+  return `${day}, ${hours}:${minutes}`;
 }
 
 function displayTemperature(response) {
@@ -62,6 +62,12 @@ function showFahrTemp(event) {
   temperatureElement.innerHTML = Math.round(fahrTemp);
 }
 
+function showCelsTemp(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temp");
+  temperatureElement.innerHTML = Math.round(celsiusTemp);
+}
+
 let celsiusTemp = null;
 
 let form = document.querySelector("#search-form");
@@ -69,5 +75,8 @@ form.addEventListener("submit", handleSubmit);
 
 let fahrTemp = document.querySelector("#fahrTemp");
 fahrTemp.addEventListener("click", showFahrTemp);
+
+let celsTemp = document.querySelector("#celsTemp");
+celsTemp.addEventListener("click", showCelsTemp);
 
 search("Sydney");

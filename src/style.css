@@ -53,3 +53,11 @@ li:first-letter {
   font-size: 18px;
   top: -26px;
 }
+#search-button {
+  background: #1ebda2;
+  color: whitesmoke;
+  font-weight: bold;
+  border-color: rgb(41, 238, 205);
+}
+#icon {
+}

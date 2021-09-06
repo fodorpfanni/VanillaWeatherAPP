@@ -58,6 +58,8 @@ function handleSubmit(event) {
 function showFahrTemp(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temp");
+  celsTemp.classList.remove("active");
+  fahrTemp.classList.add("active");
   let fahrTemp = (celsiusTemp * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrTemp);
 }
@@ -65,6 +67,8 @@ function showFahrTemp(event) {
 function showCelsTemp(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temp");
+  celsTemp.classList.add("active");
+  fahrTemp.classList.remove("active");
   temperatureElement.innerHTML = Math.round(celsiusTemp);
 }
 

@@ -1,10 +1,12 @@
 body {
   font-family: "Roboto", sans-serif;
+  font-weight: bolder;
 }
 
 h1 {
   color: #06af93;
   font-size: 35px;
+  font-weight: bolder;
   line-height: 35px;
   text-align: left;
   margin-bottom: 12px;
@@ -20,6 +22,7 @@ li {
   color: rgb(67, 74, 75);
   font-size: 18px;
   line-height: 22px;
+  text-transform: capitalize;
 }
 
 .weather-app-wrapper {
@@ -36,6 +39,7 @@ li {
 }
 .weather-temperature img {
   margin-right: 6px;
+  border-radius: 10px;
 }
 .weather-temperature strong {
   color: rgb(67, 74, 75);

@@ -22,9 +22,10 @@ li {
   color: rgb(67, 74, 75);
   font-size: 18px;
   line-height: 22px;
+}
+li:first-letter {
   text-transform: capitalize;
 }
-
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;

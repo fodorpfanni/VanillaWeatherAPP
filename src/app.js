@@ -60,8 +60,8 @@ function showFahrTemp(event) {
   let temperatureElement = document.querySelector("#temp");
   celsTemp.classList.remove("active");
   fahrTemp.classList.add("active");
-  let fahrTemp = (celsiusTemp * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrTemp);
+  let fahrTemperature = (celsiusTemp * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrTemperature);
 }
 
 function showCelsTemp(event) {

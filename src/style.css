@@ -43,6 +43,7 @@ a {
 }
 .weather-temperature img {
   margin-right: 6px;
+  padding-bottom: 25px;
   border-radius: 10px;
 }
 .weather-temperature strong {
